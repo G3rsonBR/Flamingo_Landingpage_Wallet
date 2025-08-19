@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    
+    --black: #000;
+    --white: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--white);
+    padding: 20px;
+    font-size: .90rem;
+    position: fixed;
+}
+
+header > ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none
+}
+
+header > ul > a {
+    color: var(--white);
+}
+
+.logo_header {
+    display: flex;
+    gap: 10px;
+    color: var(--white);
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.hero_section {
+    flex-direction: row;
+    height: 90vh;
+    gap: 50px;
+}
+
+.hero_section > img {
+    width: 400px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.hero_section > img:hover {
+    transform: rotate(-1deg);
+}
+
+.hero_section > .right_text_hero {
+    width: 40%;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero_section > .right_text_hero > h1 {
+    font-size: 2.5rem;
+}
+
+.hero_section > .right_text_hero > p {
+    font-size: 1.2rem;
+}
+
+.hero_section > .right_text_hero > .buttons_hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero_section > .right_text_hero > .buttons_hero > button {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    background-color: transparent;
+    transition: linear .3s ;
+    font-weight: 500;
+}
+
+.hero_section > .right_text_hero > .buttons_hero > .button_hero_light:hover, .hero_section > .right_text_hero > .buttons_hero > .button_hero_dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+.hero_section > .right_text_hero > .buttons_hero > .button_hero_dark:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
